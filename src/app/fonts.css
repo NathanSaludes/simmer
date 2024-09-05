@@ -28,6 +28,14 @@
   font-weight: normal;
 }
 
+/* Afton James */
+@font-face {
+  font-family: "Afton James";
+  src: url("/fonts/Afton James/Afton James.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 /* Articulat */
 @font-face {
   font-family: "Articulat";

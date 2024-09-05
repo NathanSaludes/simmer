@@ -12,12 +12,23 @@ const config = {
       }
     },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        "aciella-script": "var(--font-aciella-script)",
+        "adelle-mono": "var(--font-adelle-mono)",
+        "adelle-mono-flex": "var(--font-adelle-mono-flex)",
+        "afton-james": "var(--font-afton-james)",
+        articulat: "var(--font-articulat)",
+        asthetic: "var(--font-asthetic)",
+        bantayog: "var(--font-bantayog)",
+        baurems: "var(--font-baurems)",
+        fionas: "var(--font-fionas)",
+        gilroy: "var(--font-gilroy)",
+        imbue: "var(--font-imbue)",
+        lora: "var(--font-lora)",
+        "myriad-pro": "var(--font-myriad-pro)",
+        "nabire-1943": "var(--font-nabire-1943)",
+        soulcraft: "var(--font-soulcraft)"
       },
-    },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
