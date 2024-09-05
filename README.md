@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -14,23 +12,22 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Conventions
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Static Images
 
-## Learn More
+Static image assets are located in the `/public` folder under the `/images` folder with the following file naming convention: `img_<name-of-the-image>`
 
-To learn more about Next.js, take a look at the following resources:
+#### Imported Fonts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Font files are located in `/public/fonts/` directory with their own dedicated folders. Fonts are imported in the project using the `@font-face` directive in the `fonts.css` file in located in `/src/app/`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The `fonts.css` file is then imported in the `globals.css` using the `@import` directive. In the `globals.css` file, each font is assigned with its css variable following the pattern `--font-<name-of-your-font>` and is made accessible in tailwind using the `tailwind.config.ts` config file.
 
-## Deploy on Vercel
+#### \_Private Folder
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The `/_private` folder is a directory in a route where you can put components that you use in a single page but is NOT necessarily shared/used across the website. This is simply used for colocating your "private" components to avoid cluttering the `page.tsx` or `layout.tsx` of a route with markup and tailwind classes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
