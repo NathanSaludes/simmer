@@ -1,0 +1,24 @@
+@media screen and (min-width: 768px) {
+  .Decoration_DynamicInlinePadding {
+    padding-right: clamp(0px, 5vw - 1rem, 80px);
+    padding-left: clamp(0px, 6vw - 1rem, 150px);
+  }
+
+  .ServiceRow_DynamicPadding {
+    padding-right: clamp(0px, 5vw - 1rem, 80px);
+    padding-left: clamp(0px, 10vw - 1rem, 222px);
+    padding-block: clamp(0px, 8vw - 1rem, 80px);
+  }
+
+  .dynamicTextSize {
+    font-size: clamp(5rem, 13vw - 1rem, 14.6rem);
+  }
+
+  .dynamicNumericTextSize {
+    font-size: clamp(1.6rem, 5vw - 1rem, 3rem);
+  }
+
+  .dynamicHeight {
+    height: clamp(0px, 10vw - 1rem, 170px);
+  }
+}
