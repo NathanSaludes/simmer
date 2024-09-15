@@ -5,10 +5,10 @@ import styles from "./SectionCoreServices.module.css";
 const SectionCoreServices = () => {
   return (
     <section className="mb-[48.65px]">
+      {/* TODO: Make row mobile responsive */}
       <div
         className={cn(
-          "hidden lg:flex lg:items-center lg:justify-between",
-          styles.Decoration_DynamicInlinePadding
+          "container hidden px-10 lg:flex lg:items-center lg:justify-between"
         )}
       >
         <span className="inline-block aspect-square h-[48px] rounded-full bg-simmer-yellow"></span>
@@ -16,18 +16,22 @@ const SectionCoreServices = () => {
           CLICK TO KNOW
         </button>
       </div>
-      <ServiceRow>
-        <ServiceRowText>BRANDING</ServiceRowText>
-        <ServiceRowNumber>01</ServiceRowNumber>
-      </ServiceRow>
-      <ServiceRow>
-        <ServiceRowText className="font-light italic">IDENTITY</ServiceRowText>
-        <ServiceRowNumber>02</ServiceRowNumber>
-      </ServiceRow>
-      <ServiceRow className="border-b-0">
-        <ServiceRowText>EXECUTIONS</ServiceRowText>
-        <ServiceRowNumber>03</ServiceRowNumber>
-      </ServiceRow>
+      <div className="divide-y-2 divide-simmer">
+        <ServiceRow>
+          <ServiceRowText>BRANDING</ServiceRowText>
+          <ServiceRowNumber>01</ServiceRowNumber>
+        </ServiceRow>
+        <ServiceRow>
+          <ServiceRowText className="font-light italic">
+            IDENTITY
+          </ServiceRowText>
+          <ServiceRowNumber>02</ServiceRowNumber>
+        </ServiceRow>
+        <ServiceRow>
+          <ServiceRowText>EXECUTIONS</ServiceRowText>
+          <ServiceRowNumber>03</ServiceRowNumber>
+        </ServiceRow>
+      </div>
     </section>
   );
 };
@@ -38,12 +42,14 @@ const ServiceRow: React.FC<
   return (
     <div
       className={cn(
-        "flex items-stretch gap-4 border-b-2 border-simmer px-7 py-8 min-[425px]:gap-8 min-[425px]:px-10",
+        "px-7 py-8 min-[425px]:px-10",
         styles.ServiceRow_DynamicPadding,
         className
       )}
     >
-      {children}
+      <div className="container flex items-stretch gap-4 min-[425px]:gap-8">
+        {children}
+      </div>
     </div>
   );
 };

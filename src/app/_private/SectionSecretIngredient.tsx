@@ -5,7 +5,8 @@ import styles from "./SectionSecretIngredient.module.css";
 
 const SectionSecretIngredient = () => {
   return (
-    <section className="mb-[40px] px-10 md:px-20">
+    <section className="container mb-[40px] px-10 md:px-20">
+      {/* TODO: Make container ticket-shaped */}
       <div
         className={cn(
           "relative min-h-[300px] overflow-hidden rounded-[12px] bg-[#d33e27] sm:space-y-[32px] sm:rounded-[30px] lg:rounded-[40px]",

@@ -6,7 +6,7 @@ import Image from "next/image";
  */
 const SectionCards = () => {
   return (
-    <section className="mb-[24.82px] px-10 @container/cards-section md:px-20 xl:mb-8">
+    <section className="container mb-[24.82px] px-10 @container/cards-section md:px-20 xl:mb-8">
       <div className="flex flex-col gap-6 @[75rem]/cards-section:flex-row">
         {/* card 1 */}
         <div className="rounded-b-2xl bg-simmer md:min-w-[544px] md:rounded-b-[20px]">

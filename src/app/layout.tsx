@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="antialiased">
-      <body className="bg-simmer font-articulat">{children}</body>
+      <body className="font-articulat">{children}</body>
     </html>
   );
 }

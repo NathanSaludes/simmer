@@ -51,7 +51,7 @@ export const HeroGridDesktop = () => {
         </div>
         <div className="h-[160px] max-w-max p-[2.2rem_2px_0_1.5rem]">
           {/* text-[13.3rem] */}
-          <h1 className="font-articulat text-[10vw] font-thin italic leading-[0.66] tracking-tighter">
+          <h1 className="font-articulat text-[12.3rem] font-thin italic leading-[0.66] tracking-tighter">
             THAN
           </h1>
         </div>

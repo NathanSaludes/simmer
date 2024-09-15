@@ -6,9 +6,17 @@ interface Props {
   inverted?: boolean;
 }
 
-const VerticalNav: React.FC<Props> = ({ inverted = false }) => {
+const VerticalNav: React.FC<React.HTMLAttributes<HTMLDivElement> & Props> = ({
+  inverted = false,
+  ...props
+}) => {
   return (
-    <aside className="hidden min-h-[200px] w-[80px] border-r-2 border-t-2 border-simmer pb-20 text-simmer xl:block">
+    <aside
+      className={cn(
+        "hidden min-h-[200px] w-[80px] border-r-2 border-t-2 border-simmer bg-black pb-20 text-simmer xl:block",
+        props.className
+      )}
+    >
       <div className="sticky top-0 flex flex-col items-center gap-8 py-8">
         <div className="relative h-[26.09px] w-[40px]">
           <Image

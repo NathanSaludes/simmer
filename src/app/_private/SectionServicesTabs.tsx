@@ -1,12 +1,13 @@
 import PlaceholderText from "@/components/dev/PlaceholderText";
 import Image from "next/image";
 
+// TODO: Implement tab view functionality
 const SectionServicesTabs = () => {
   return (
-    <section className="">
+    <section>
       {/* Tab Triggers Slot */}
       <div>
-        <div className="flex min-h-[100px] items-center border-t-2 border-dashed border-simmer px-20">
+        <div className="debug-outline flex min-h-[100px] items-center px-20">
           <PlaceholderText
             text="Tab Triggers"
             className="flex-1 text-center text-simmer"

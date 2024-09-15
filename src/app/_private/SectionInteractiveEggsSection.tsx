@@ -1,5 +1,4 @@
-import PlaceholderText from "@/components/dev/PlaceholderText";
-
+// TODO: Make section mobile responsive
 const SectionInteractiveEggs = () => {
   return (
     <section className="bg-simmer">
@@ -10,6 +9,7 @@ const SectionInteractiveEggs = () => {
           <span className="relative text-simmer">EGG</span>
           CITING
         </div>
+        {/* TODO: Implement interactive eggs */}
         <button className="h-[50px] rounded-full border-2 border-black px-10 font-adelle-mono text-[1.1rem]">
           TAP FOR EGGS
         </button>
