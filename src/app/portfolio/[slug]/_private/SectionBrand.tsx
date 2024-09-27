@@ -6,9 +6,9 @@ const SectionBrand = () => {
     <section className="flex-1">
       <div className="space-y-[57px] rounded-tl-[156px] bg-simmer px-[64px] pb-[91px] pt-[51px]">
         {/* Row 1 - Bento Grid */}
-        <div className="container grid grid-cols-2 gap-[51px]">
+        <div className="container grid grid-cols-1 gap-[51px] lg:grid-cols-2">
           {/* col 1 */}
-          <div className="relative aspect-square h-full overflow-hidden rounded-[102px] border-2 border-black bg-gray-100">
+          <div className="relative aspect-square w-full overflow-hidden rounded-[102px] border-2 border-black bg-gray-100">
             {/* <Image
               src="/images/sample/bourbon.png"
               alt="bourbon"
@@ -17,8 +17,8 @@ const SectionBrand = () => {
             /> */}
           </div>
           {/* col 2 */}
-          <div className="flex flex-col gap-[28px]">
-            <div className="relative h-[394px] overflow-hidden rounded-[81px] border-2 border-black bg-gray-100">
+          <div className="hidden lg:flex lg:flex-col lg:gap-[28px]">
+            <div className="relative aspect-[849/394] w-full overflow-hidden rounded-[81px] border-2 border-black bg-gray-100">
               {/* <Image
                 src="/images/sample/bourbon-2.png"
                 alt="bourbon"
@@ -100,7 +100,7 @@ const SectionBrand = () => {
             </h1>
           </div>
           {/* right */}
-          <div className="flex flex-1 justify-end">
+          <div className="flex flex-1 flex-wrap justify-end">
             <div className="flex items-end gap-[27.07px]">
               <Image
                 src="/images/img_arrow-down.svg"
@@ -108,7 +108,7 @@ const SectionBrand = () => {
                 width={32.93}
                 height={82.05}
               />
-              <p className="font-articulat text-[6.25rem] leading-[0.7] tracking-tight">
+              <p className="text-nowrap font-articulat text-[6.25rem] leading-[0.7] tracking-tight">
                 PEEK HERE
               </p>
             </div>
